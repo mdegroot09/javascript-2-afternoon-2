@@ -368,10 +368,7 @@ for(i = 0; i < devMountainEmployees.length; i++){
   Create an empty array called users.
 */
 
-
-
-
-
+let users = [];
 /*
   Now add three user objects to your users array. Each user object should contain the following properties. name, email, password, username.
 
@@ -387,7 +384,19 @@ var user1 = {
 };
 // Do not edit the code above.
 
-//Code Here
+users[0] = user1;
+users[1] = {
+  name: "Fake",
+  email: "fake@fake.com",
+  password: "fakepw",
+  username: "fakeun"
+}
+users[2] = {
+  name: "Real",
+  email: "real@real.com",
+  password: "realpw",
+  username: "realun"
+}
 
 
 
@@ -401,7 +410,14 @@ var user1 = {
   Once you find the particular index he's located in, delete him from the array.
 */
 
-//Code Here
+console.log(users)
+console.log(users.length)
+
+for(i = 0; i < users.length; i++){
+  if(users[i].email === "tylermcginnis33@gmail.com"){
+    users.splice(i, 1);
+  }
+}
 
 
 
